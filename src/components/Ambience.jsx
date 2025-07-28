@@ -29,7 +29,7 @@ const bentoSpans = [
 const Ambience = () => {
   return (
     <div className="bg-white text-black px-4 py-12">
-      <h2 className="text-3xl font-semibold max-lg:text-xl text-center">Our Ambiance</h2>
+      <h2 className="text-3xl font-semibold max-lg:text-xl uppercase text-center">Our Ambiance</h2>
        <p className="text-xs text-orange-500 lg:text-sm text-center mb-10 font-semibold ">Nuwairahs Japanese and Mexican kitchen</p>
       <div
         className="grid grid-cols-3 gap-2 max-w-7xl mx-auto"
