@@ -105,7 +105,7 @@ const NavBar = () => {
 
         {/* Mobile dropdown panel */}
         {menuOpen && (
-          <div className="w-8/12 border-r border-r-neutral-200 bg-white h-[92vh] border-t border-t-neutral-300 fixed flex flex-col justify-between">
+          <div className="w-8/12 border-r top-17 border-r-neutral-200 bg-white h-[92vh]  fixed flex flex-col justify-between">
             {/* Menu items */}
             <div className="flex flex-col gap-5 p-10">
               {menu.map((item, index) => (
