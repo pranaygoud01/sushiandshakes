@@ -10,7 +10,7 @@ const Footer = () => {
           <h2 className="text-3xl max-lg:text-2xl font-semibold  font-cal mb-2">Our Locations</h2>
 
           <div>
-            <h3 className="font-semibold text-lg mb-2">Nuwairahs Japanese and Mexican kitchen</h3>
+            <h3 className="font-semibold max-lg:text-sm text-lg mb-2">Nuwairahs Japanese and Mexican kitchen</h3>
             <address className="not-italic text-neutral-300 text-xs mb-1">
               Station road, Old Harlow CM17 0AS
             </address>
@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-semibold text-lg mb-2">Nuwairahs Japanese and Mexican kitchen</h3>
+            <h3 className="font-semibold max-lg:text-sm text-lg mb-2">Nuwairahs Japanese and Mexican kitchen</h3>
             <address className="not-italic text-neutral-300 text-xs mb-1">
               9, Northgate, Bishop’s Stortford CM23 2ET
             </address>
@@ -48,12 +48,12 @@ const Footer = () => {
 
         {/* Timings */}
         <div className="w-full md:w-1/3 max-w-xs text-neutral-300 text-xs">
-          <h3 className="font-semibold text-lg mb-4">Special Weekend Restaurant Timings</h3>
+          <h3 className="font-semibold max-lg:text-sm text-lg mb-2">Special Weekend Restaurant Timings</h3>
           <p className="mb-1">
             <strong>Friday &amp; Saturday:</strong> 12:00 AM - 12:00 PM
           </p>
 
-          <h3 className="font-semibold text-lg my-4">Daily Restaurant Timings</h3>
+          <h3 className="font-semibold max-lg:text-sm text-lg my-2 mt-4">Daily Restaurant Timings</h3>
           <p>
             <strong>Sunday to Thursday:</strong> 12:00 AM - 10:00 PM
           </p>
@@ -61,14 +61,14 @@ const Footer = () => {
 
         {/* Contact & Social */}
         <div className="flex flex-col gap-3 w-full md:w-1/3 max-w-sm">
-          <h3 className="font-semibold text-lg mb-4">Stay Connected</h3>
-          <p className="text-neutral-400 text-xs mb-2">
+          <h3 className="font-semibold text-lg mb-4 max-lg:mb-2">Stay Connected</h3>
+          <p className="text-neutral-400 text-xs max-lg:mb-0 mb-2">
             Email us at{" "}
             <a href="mailto:Info@nuwairahs.co.uk" className="hover:underline">
               Info@nuwairahs.co.uk
             </a>
           </p>
-          <p className="text-neutral-400 text-xs mb-6">
+          <p className="text-neutral-400 text-xs mb-6 max-lg:mb-2">
             Call for Booking:{" "}
             <a href="tel:+441279801230" className="hover:underline">
               +44 1279 801230

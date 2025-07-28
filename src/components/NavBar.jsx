@@ -21,7 +21,7 @@ const NavBar = () => {
         { name: "Desserts Menu", path: "/menu/desserts" },
       ],
     },
-    { name: "About", path: "/" },
+    { name: "About", path: "/about" },
     { name: "Contact", path: "/" },
   ];
 
