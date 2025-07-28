@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as AmbienceRouteImport } from './routes/ambience'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as MenuFoodRouteImport } from './routes/menu/food'
@@ -19,6 +20,11 @@ import { Route as MenuDessertsRouteImport } from './routes/menu/desserts'
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AmbienceRoute = AmbienceRouteImport.update({
+  id: '/ambience',
+  path: '/ambience',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -50,6 +56,7 @@ const MenuDessertsRoute = MenuDessertsRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/ambience': typeof AmbienceRoute
   '/contact': typeof ContactRoute
   '/menu/desserts': typeof MenuDessertsRoute
   '/menu/drinks': typeof MenuDrinksRoute
@@ -58,6 +65,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/ambience': typeof AmbienceRoute
   '/contact': typeof ContactRoute
   '/menu/desserts': typeof MenuDessertsRoute
   '/menu/drinks': typeof MenuDrinksRoute
@@ -67,6 +75,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/ambience': typeof AmbienceRoute
   '/contact': typeof ContactRoute
   '/menu/desserts': typeof MenuDessertsRoute
   '/menu/drinks': typeof MenuDrinksRoute
@@ -77,6 +86,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/ambience'
     | '/contact'
     | '/menu/desserts'
     | '/menu/drinks'
@@ -85,6 +95,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/ambience'
     | '/contact'
     | '/menu/desserts'
     | '/menu/drinks'
@@ -93,6 +104,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
+    | '/ambience'
     | '/contact'
     | '/menu/desserts'
     | '/menu/drinks'
@@ -102,6 +114,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  AmbienceRoute: typeof AmbienceRoute
   ContactRoute: typeof ContactRoute
   MenuDessertsRoute: typeof MenuDessertsRoute
   MenuDrinksRoute: typeof MenuDrinksRoute
@@ -115,6 +128,13 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ambience': {
+      id: '/ambience'
+      path: '/ambience'
+      fullPath: '/ambience'
+      preLoaderRoute: typeof AmbienceRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -158,6 +178,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  AmbienceRoute: AmbienceRoute,
   ContactRoute: ContactRoute,
   MenuDessertsRoute: MenuDessertsRoute,
   MenuDrinksRoute: MenuDrinksRoute,
