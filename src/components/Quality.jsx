@@ -25,11 +25,12 @@ const cards = [
 
 const Quality = () => {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12">
+    <div className="max-w-8xl mx-auto max-lg:px-5 px-10 py-12">
       {/* Heading added here */}
-      <h2 className="text-3xl uppercase max-lg:text-xl font-bold text-center mb-10">
+      <h2 className="text-3xl uppercase max-lg:text-xl font-bold text-center ">
         Our Commitment to Quality
       </h2>
+      <p className="text-center mb-10 text-xs py-2 max-lg:mb-5 font-semibold text-orange-500 uppercase">Nuwairah's</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {cards.map((card, idx) => (

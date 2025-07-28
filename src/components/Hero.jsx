@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaArrowRight } from "react-icons/fa6";
+import { SiGooglegemini } from "react-icons/si";
 
 const Hero = () => {
   const [showOptions, setShowOptions] = useState(false);
@@ -10,9 +10,11 @@ const Hero = () => {
 
   return (
     <div className="flex justify-center border-b border-b-neutral-300">
-      <div className="max-w-7xl min-h-[70vh] px-5 gap-10 w-full grid grid-cols-1 md:grid-cols-2">
+      <div className="max-w-8xl min-h-[70vh] max-lg:px-5 px-10 gap-10 w-full grid grid-cols-1 md:grid-cols-2">
         {/* Left Content */}
-        <div className="flex flex-col gap-4 justify-center relative py-10 md:py-0">
+        
+        <div className="flex flex-col gap-4 justify-center relative pt-10 md:py-0">
+          <span className="absolute top-15 max-lg:top-6 max-lg:right-3 right-15"><SiGooglegemini className="text-orange-500 text-xl"/></span>
           <h1 className="font-semibold text-3xl md:text-5xl uppercase leading-tight text-neutral-800">
             Where traditional recipes dance with modern flavors
           </h1>
@@ -22,7 +24,7 @@ const Hero = () => {
             Enjoy a unique fusion experience that brings two vibrant cuisines
             together.
           </p>
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 mt-5">
+          <div className="flex  sm:flex-row items-start sm:items-center gap-3 mt-5">
             <button className="font-semibold text-white px-4 py-2 text-sm bg-orange-500">
               Order Now
             </button>

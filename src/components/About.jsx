@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="max-w-7xl max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 h-auto md:h-[70vh]">
+    <div className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8 py-12 h-auto md:h-[70vh]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
         <div>
           <img
