@@ -170,21 +170,21 @@ const FoodMenu = () => {
   return (
     <div className="bg-white text-neutral-800">
       
-      <div className="max-w-5xl mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold text-center mb-4">Food Menu</h1>
+      <div className="max-w-5xl mx-auto px-4 py-12 max-lg:py-6">
+        <h1 className="text-4xl max-lg:text-xl font-bold uppercase text-center mb-4">Food Menu</h1>
         
 
         {sections.map((section, i) => (
           <div key={i} className="mb-12">
-            <h2 className="text-xl font-bold border-b-2 border-orange-500 inline-block mb-6 uppercase tracking-wide">{section.title}</h2>
+            <h2 className="text-xl font-bold max-lg:lg border-b-2 border-orange-500 inline-block mb-6 uppercase tracking-wide">{section.title}</h2>
             <div className="space-y-6">
               {section.items.map((item, idx) => (
                 <div key={idx} className="border-b border-neutral-300 pb-4">
                   <div className="flex justify-between items-center">
-                    <h3 className="font-semibold text-md">{item.name}</h3>
+                    <h3 className="font-semibold  max-lg:text-sm text-md">{item.name}</h3>
                     <span className="text-sm text-orange-500 font-semibold">{item.price}</span>
                   </div>
-                  <p className="text-sm text-neutral-600 mt-1">{item.desc}</p>
+                  <p className="text-sm max-lg:text-xs text-neutral-600 mt-1">{item.desc}</p>
                 </div>
               ))}
             </div>

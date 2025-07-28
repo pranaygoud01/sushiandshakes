@@ -123,12 +123,12 @@ const NavBar = () => {
                         {item.name}
                       </h1>
                       {openDropdown === item.name && (
-                        <div className="ml-4 mt-2 flex flex-col gap-2">
+                        <div className="ml-6 mt-2 flex py-2 flex-col gap-3">
                           {item.submenu.map((subItem, idx) => (
                             <a
                               key={idx}
                               href={subItem.path}
-                              className="text-xs uppercase text-neutral-600"
+                              className="text-xs uppercase font-semibold text-neutral-600"
                             >
                               {subItem.name}
                             </a>

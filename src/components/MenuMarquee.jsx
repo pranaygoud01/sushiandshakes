@@ -27,11 +27,11 @@ const MenuMarquee = () => {
           animation: marquee 25s linear infinite;
         }
       `}</style>
-      <h1 className="font-dm font-semibold text-xl text-orange-500">Menu</h1>{" "}
-      <p className="font-cal text-4xl max-lg:text-3xl font-semibold text-center max-lg:px-5">
-        Where Tokyo Meets Mexico City—Every Bite a New Adventure
+      <h1 className="font-dm font-semibold text-xs uppercase text-orange-500">Menu</h1>{" "}
+      <p className="font-cal text-4xl uppercase max-lg:text-xl font-semibold text-center max-lg:px-5">
+        Where Tokyo Meets Mexico City Every Bite a New Adventure
       </p>{" "}
-      <p className="text-neutral-500 text-sm text-center w-9/12 font-dm max-lg:px-5 max-lg:text-center max-lg:text-[9px]">
+      <p className="text-neutral-500 text-sm text-center w-9/12 max-lg:w-11/12 font-dm max-lg:px-5 max-lg:text-center max-lg:text-[11px]">
         Discover the fiery passion of Mexico and the refined artistry of Japan
         in every dish. Our menu celebrates bold fusion flavors, traditional
         specialties, and creative house favorites—all crafted for meat lovers,

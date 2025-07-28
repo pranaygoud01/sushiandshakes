@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="flex flex-wrap md:flex-nowrap justify-between items-start gap-10">
         {/* Locations */}
         <div className="flex flex-col gap-6 w-full md:w-1/3 max-w-md">
-          <h2 className="text-3xl font-cal mb-4">Our Locations</h2>
+          <h2 className="text-3xl max-lg:text-2xl font-semibold  font-cal mb-2">Our Locations</h2>
 
           <div>
             <h3 className="font-semibold text-lg mb-2">Nuwairahs Japanese and Mexican kitchen</h3>

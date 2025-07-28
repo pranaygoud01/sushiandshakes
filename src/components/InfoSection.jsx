@@ -11,7 +11,7 @@ const InfoSection = () => {
         <h2 className="text-center text-xl md:text-3xl font-semibold uppercase mb-10 md:mb-12">
           Our Awesome Services
         </h2>
-<span className="absolute top-20 max-lg:left-2 max-lg:top-4 left-30"><img src={food1} className="w-auto max-lg:h-[60px] h-[150px]"/></span>
+<span className="absolute top-20 max-lg:left-2  max-lg:hidden max-lg:top-4 left-30"><img src={food1} className="w-auto max-lg:h-[60px] h-[150px]"/></span>
         <div className="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0">
 
           {/* Left Big Highlight Box */}

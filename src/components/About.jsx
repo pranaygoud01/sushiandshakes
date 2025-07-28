@@ -12,7 +12,7 @@ const About = () => {
             className="w-full h-[70vh] md:max-h-full  object-cover"
           />
         </div>
-        <div className="relative h-full flex flex-col justify-center">
+        <div className="relative h-full flex flex-col max-lg:pb-10 justify-center">
             <span className="absolute top-10 max-lg:top-6 max-lg:right-3 right-50"><SiGooglegemini className="text-orange-500 text-2xl"/></span>
           <p className="text-xs text-orange-500 font-semibold mb-2">Nuwairahs Japanese and Mexican kitchen</p>
           <h2 className="text-2xl sm:text-3xl uppercase font-bold mb-3">
