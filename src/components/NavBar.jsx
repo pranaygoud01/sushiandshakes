@@ -22,7 +22,7 @@ const NavBar = () => {
       ],
     },
     { name: "About", path: "/about" },
-    { name: "Contact", path: "/" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
@@ -88,9 +88,9 @@ const NavBar = () => {
           </div>
 
           {/* Desktop CTA */}
-          <button className="hidden md:flex items-center gap-2 font-bold text-white px-4 py-2 bg-orange-500 text-sm hover:bg-orange-600 transition-all duration-200">
+          <a href="https://order.nuwairahs.co.uk/" className="hidden md:flex items-center gap-2 font-bold text-white px-4 py-2 bg-orange-500 text-sm hover:bg-orange-600 transition-all duration-200">
             Order Now
-          </button>
+          </a>
 
           {/* Mobile Menu Toggle */}
           <button

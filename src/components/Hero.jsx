@@ -25,9 +25,9 @@ const Hero = () => {
             together.
           </p>
           <div className="flex  sm:flex-row items-start sm:items-center gap-3 mt-5">
-            <button className="font-semibold text-white px-4 py-2 text-sm bg-orange-500">
+            <a href="https://order.nuwairahs.co.uk/" className="font-semibold text-white px-4 py-2 hover:bg-orange-600 text-sm bg-orange-500">
               Order Now
-            </button>
+            </a>
             <div className="relative">
               <button
                 onClick={toggleOptions}
@@ -37,19 +37,19 @@ const Hero = () => {
               </button>
 
               {showOptions && (
-                <div className="absolute mt-2 left-0 sm:-right-10 bg-neutral-800 border border-gray-300 w-48 z-10">
-                  <button
+                <div className="absolute mt-2 left-0 sm:-right-10 bg-neutral-800  w-48 z-10">
+                  <a
                     className="block px-4 cursor-pointer py-2 text-sm text-white hover:bg-black w-full text-left"
-                    onClick={() => alert("Option 1 selected!")}
+                    href="https://www.opentable.co.uk/booking/restref/availability?lang=en-GB&correlationId=43ebf75d-944b-4183-8676-68c52e384867&restRef=375198&otSource=Restaurant%20website"
                   >
                     Old Harlow
-                  </button>
-                  <button
+                  </a>
+                  <a
                     className="block px-4 py-2 text-sm cursor-pointer text-white hover:bg-black w-full text-left"
-                    onClick={() => alert("Option 2 selected!")}
+                   href="https://www.opentable.co.uk/booking/restref/availability?lang=en-GB&correlationId=e7750972-a27a-4c02-9655-97e343a7dd0e&restRef=389022&otSource=Restaurant%20website"
                   >
                     Bishop’s Stortford
-                  </button>
+                  </a>
                 </div>
               )}
             </div>
