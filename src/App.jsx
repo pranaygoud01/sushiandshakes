@@ -6,6 +6,7 @@ import InfoSection from "./components/InfoSection";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import MenuMarquee from "./components/MenuMarquee";
+import AmbiancePage from "./pages/AmbiencePage";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <About />
 
       <InfoSection />
+      <AmbiancePage/>
     </div>
   );
 };

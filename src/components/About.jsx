@@ -1,13 +1,13 @@
 import React from "react";
 import { SiGooglegemini } from "react-icons/si";
-
+import image from "../assets/ambience/img1.jpg"
 const About = () => {
   return (
     <div className="max-w-8xl   mx-auto px-4 sm:px-6 lg:px-8 h-auto md:h-[70vh]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
         <div>
           <img
-            src="https://images.unsplash.com/photo-1549648184-0d3e8b8684fd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={image}
             alt="Nuwairah's Dining Experience"
             className="w-full h-[70vh] md:max-h-full  object-cover"
           />
