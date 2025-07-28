@@ -119,7 +119,7 @@ const NavBar = () => {
                         )
                       }
                     >
-                      <h1 className="text-xs font-semibold uppercase">
+                      <h1 className="text-sm font-semibold uppercase">
                         {item.name}
                       </h1>
                       {openDropdown === item.name && (
@@ -138,7 +138,7 @@ const NavBar = () => {
                     </div>
                   ) : (
                     <a href={item.path}>
-                      <h1 className="text-xs font-semibold uppercase">
+                      <h1 className="text-sm font-semibold uppercase">
                         {item.name}
                       </h1>
                     </a>
@@ -149,14 +149,14 @@ const NavBar = () => {
 
             {/* Contact info at bottom */}
             <div className="py-5 space-y-2 px-5 absoulte bottom-0 mb-4 bg-orange-500 text-white">
-              <p className="text-[9px] flex gap-2 items-center">
+              <p className="text-[10px] flex gap-2 items-center">
                 Nuwairahs Japanese and Mexican kitchen <br />
                 Station road Old Harlow CM17 0AS
               </p>
-              <p className="text-[9px] flex gap-2 items-center">
+              <p className="text-[10px] flex gap-2 items-center">
                 +44 1279 801230
               </p>
-              <p className="text-[9px] flex gap-2 items-center">
+              <p className="text-[10px] flex gap-2 items-center">
                 info@nuwairahs.co.uk
               </p>
             </div>
