@@ -1,10 +1,10 @@
 import { createFileRoute } from '@tanstack/react-router'
-import AmbiancePage from '../pages/AmbiencePage'
+import AmbienceMarquee from '../components/Ambience'
 
 export const Route = createFileRoute('/ambience')({
   component: RouteComponent,
 })
 
 function RouteComponent() {
-  return <AmbiancePage/>
+  return <AmbienceMarquee/>
 }

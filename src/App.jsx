@@ -15,9 +15,8 @@ const App = () => {
       <Quality />
       <MenuMarquee />
       <About />
-
+      <AmbiancePage />
       <InfoSection />
-      <AmbiancePage/>
     </div>
   );
 };
