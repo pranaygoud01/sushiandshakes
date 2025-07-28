@@ -16,7 +16,7 @@ const AmbienceMarquee = () => {
   const duplicatedImages = [...images, ...images];
 
   return (
-    <div className="bg-white border-t border-t-neutral-300 text-black px-4 py-12 overflow-hidden">
+    <div className="bg-white border-t border-t-neutral-300 text-black  py-12 overflow-hidden">
       <h2 className="text-3xl font-semibold max-lg:text-xl uppercase text-center">
         Our Ambiance
       </h2>

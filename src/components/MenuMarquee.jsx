@@ -24,6 +24,7 @@ const MenuMarquee = () => {
         }
         .marquee {
           display: flex;
+          width:max-content;
           animation: marquee 25s linear infinite;
         }
       `}</style>
