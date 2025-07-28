@@ -1,5 +1,5 @@
 import React from "react";
-
+import food from "../assets/food.png"
 const cards = [
   {
     icon: "🍟",
@@ -25,7 +25,10 @@ const cards = [
 
 const Quality = () => {
   return (
-    <div className="max-w-8xl mx-auto max-lg:px-5 px-10 py-12">
+    <div className="max-w-8xl mx-auto max-lg:px-5 relative px-10 py-12">
+      <span className="absolute top-0 max-lg:hidden left-10">
+        <img src={food} className="w-auto h-[150px]"/>
+      </span>
       {/* Heading added here */}
       <h2 className="text-3xl uppercase max-lg:text-xl font-bold text-center ">
         Our Commitment to Quality
@@ -36,7 +39,7 @@ const Quality = () => {
         {cards.map((card, idx) => (
           <div
             key={idx}
-            className="bg-white border border-neutral-200 hover:shadow-md p-6 flex flex-col items-center text-center"
+            className="bg-white border border-neutral-200 shadow-xl hover:shadow-md p-6 flex flex-col items-center text-center"
           >
             <div className="mb-2 text-4xl">{card.icon}</div>
             <h3 className="text-lg font-semibold mb-1">{card.title}</h3>

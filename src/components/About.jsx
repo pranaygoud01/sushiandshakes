@@ -1,17 +1,20 @@
 import React from "react";
+import { SiGooglegemini } from "react-icons/si";
 
 const About = () => {
   return (
-    <div className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8 py-12 h-auto md:h-[70vh]">
+    <div className="max-w-8xl border-b border-b-neutral-300 l mx-auto px-4 sm:px-6 lg:px-8 h-auto md:h-[70vh]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
         <div>
           <img
             src="https://images.unsplash.com/photo-1549648184-0d3e8b8684fd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Nuwairah's Dining Experience"
-            className="w-full max-h-[50vh] md:max-h-full rounded-md object-cover"
+            className="w-full h-[70vh] md:max-h-full  object-cover"
           />
         </div>
-        <div>
+        <div className="relative h-full flex flex-col justify-center">
+            <span className="absolute top-10 max-lg:top-6 max-lg:right-3 right-50"><SiGooglegemini className="text-orange-500 text-2xl"/></span>
+          <p className="text-xs text-orange-500 font-semibold mb-2">Nuwairahs Japanese and Mexican kitchen</p>
           <h2 className="text-2xl sm:text-3xl uppercase font-bold mb-3">
             About Nuwairah's
           </h2>
