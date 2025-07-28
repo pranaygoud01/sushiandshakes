@@ -28,12 +28,12 @@ const NavBar = () => {
   return (
     <>
       {/* Top info bar */}
-      <div className="w-full max-lg:hidden flex justify-between text-white bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 px-20 p-3 h-[40px] font-semibold">
-        <h1 className="flex gap-1 items-center text-xs">
+      <div className="w-full  flex justify-between max-lg:px-2 max-lg:justify-center  text-white bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 px-20 p-3 h-[40px] font-semibold">
+        <h1 className="flex gap-1 max-lg:text-[9px] items-center text-xs">
           <GrLocation />
           Nuwairahs Japanese and Mexican kitchen Station road Old Harlow CM17 0AS
         </h1>
-        <div className="flex text-xs gap-5">
+        <div className="flex text-xs max-lg:hidden gap-5">
           <p className="flex gap-1 items-center">
             <MdOutlineLocalPhone />
             +44 1279 801230
