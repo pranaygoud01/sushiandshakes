@@ -30,12 +30,12 @@ const images = [
 const Ambience = () => {
   return (
     <div className="bg-white text-black px-4 py-12">
-      <h2 className="text-3xl font-semibold text-center mb-10">Our Ambiance</h2>
+      <h2 className="text-3xl font-semibold max-lg:text-xl text-center mb-10">Our Ambiance</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {images.map((img, index) => (
           <div
             key={index}
-            className="overflow-hidden rounded-md shadow-lg border border-gray-700"
+            className="overflow-hidden rounded-md shadow-lg "
           >
             <img
               src={img}
