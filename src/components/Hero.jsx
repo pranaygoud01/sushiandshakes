@@ -3,11 +3,7 @@ import { SiGooglegemini } from "react-icons/si";
 import logo from "../assets/logo.png";
 
 const Hero = () => {
-  const [showOptions, setShowOptions] = useState(false);
 
-  const toggleOptions = () => {
-    setShowOptions((prev) => !prev);
-  };
 
   return (
     <div className="flex justify-center border-b border-b-neutral-300 relative">
@@ -18,13 +14,13 @@ const Hero = () => {
         className="pointer-events-none select-none opacity-10 absolute inset-0 m-auto max-w-xs max-h-xs z-0"
       />
 
-      <div className="max-w-8xl min-h-[70vh] max-lg:px-5 px-10 gap-10 w-full grid grid-cols-1 md:grid-cols-2 relative z-10">
+      <div className="max-w-8xl min-h-[60vh] lg:h-[70vh] max-lg:px-5 px-10 gap-10 w-full grid grid-cols-1 md:grid-cols-2 relative z-10">
         {/* Left Content */}
-        <div className="flex flex-col gap-4 justify-center relative pt-10 md:py-0">
+        <div className="flex flex-col gap-4 justify-center relative pt-10 max-lg:pt-5 md:py-0">
           <span className="absolute top-15 max-lg:top-6 max-lg:right-3 right-15">
             <SiGooglegemini className="text-orange-500 text-xl" />
           </span>
-          <h1 className="font-semibold text-3xl md:text-5xl uppercase leading-tight text-neutral-800">
+          <h1 className="font-semibold text-3xl md:text-5xl uppercase leading-tight text-black">
             Where traditional recipes dance with modern flavors
           </h1>
           <p className="text-neutral-500 text-sm md:text-base">
@@ -36,41 +32,17 @@ const Hero = () => {
           <div className="flex  sm:flex-row items-start sm:items-center gap-3 mt-5">
             <a
               href="https://order.nuwairahs.co.uk/"
-              className="font-semibold text-white px-4 py-2 hover:bg-orange-600 text-sm bg-orange-500"
+              className="font-semibold text-white px-8 py-2 hover:bg-orange-600 text-lg max-lg:text-sm bg-orange-500"
             >
               Order Now
             </a>
-            <div className="relative">
-              <button
-                onClick={toggleOptions}
-                className="font-semibold flex max-lg:px-2 items-center gap-1 cursor-pointer text-black px-4 py-2 text-sm hover:underline"
-              >
-                Book A Table
-              </button>
-
-              {showOptions && (
-                <div className="absolute mt-2 left-0 sm:-right-10 bg-neutral-800  w-48 z-10">
-                  <a
-                    className="block px-4 cursor-pointer py-2 text-sm text-white hover:bg-black w-full text-left"
-                    href="https://www.opentable.co.uk/booking/restref/availability?lang=en-GB&correlationId=43ebf75d-944b-4183-8676-68c52e384867&restRef=375198&otSource=Restaurant%20website"
-                  >
-                    Old Harlow
-                  </a>
-                  <a
-                    className="block px-4 py-2 text-sm cursor-pointer text-white hover:bg-black w-full text-left"
-                    href="https://www.opentable.co.uk/booking/restref/availability?lang=en-GB&correlationId=e7750972-a27a-4c02-9655-97e343a7dd0e&restRef=389022&otSource=Restaurant%20website"
-                  >
-                    Bishop’s Stortford
-                  </a>
-                </div>
-              )}
-            </div>
+     
           </div>
         </div>
 
         {/* Right Image */}
         <div
-          className="w-full h-64 md:h-auto bg-cover bg-center bg-no-repeat"
+          className="w-full max-lg:hidden h-64 md:h-auto bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1680044991909-d4cf212589b0?q=80&w=1143&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",

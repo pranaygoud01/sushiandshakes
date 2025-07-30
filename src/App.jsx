@@ -12,8 +12,9 @@ const App = () => {
   return (
     <div>
       <Hero />
-      <Quality />
       <MenuMarquee />
+      <Quality />
+
       <About />
       <AmbiancePage />
       <InfoSection />

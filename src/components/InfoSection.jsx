@@ -4,7 +4,7 @@ import leaf from "../assets/leaf.png"
 import food1 from "../assets/food1.png"
 const InfoSection = () => {
   return (
-    <div className="flex justify-center border-y border-y-neutral-300 bg-neutral-50">
+    <div className="flex justify-center -z-10 border-y border-y-neutral-300 bg-neutral-50">
      
       <section className="py-8 px-4 md:py-12 md:px-8 max-w-7xl w-full  relative mx-auto">
         <span className="absolute top-20 max-lg:left-2 max-lg:top-4 left-10"><img src={leaf} className="w-auto max-lg:h-[60px] h-[150px]"/></span>

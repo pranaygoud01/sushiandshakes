@@ -1,12 +1,19 @@
 import React from "react";
+import food1 from "../assets/food/Crispy-pullet.jpg";
+import food2 from "../assets/food/Dragon-Roll.jpg";
+import food3 from "../assets/food/PrawnKatsuCurry.jpg";
+import food4 from "../assets/food/spiderroll.jpg";
+import food5 from "../assets/food/Volcano-Roll.jpg";
+import food6 from "../assets/food/food1.jpg";
 
 const MenuMarquee = () => {
   const menuImages = [
-    "https://images.unsplash.com/photo-1580876205974-a8d6894b0f71?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1683259692515-220679cb1c6a?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1551326844-4df70f78d0e9?q=80&w=1026&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1583549323543-7ae855a78d6d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1555403039-35151a15b61b?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    { image: food1, name: "Crispy Pullet" },
+    { image: food2, name: "Dragon Roll" },
+    { image: food3, name: "Prawn Katsu Curry" },
+    { image: food4, name: "Spider Roll" },
+    { image: food5, name: "Volcano Roll" },
+    { image: food6, name: "Tempura" }
   ];
 
   // Duplicate images to simulate infinite scrolling
@@ -24,14 +31,22 @@ const MenuMarquee = () => {
         }
         .marquee {
           display: flex;
-          width:max-content;
+          width: max-content;
           animation: marquee 25s linear infinite;
         }
+        .marquee-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.5rem;
+        }
       `}</style>
-      <h1 className="font-dm font-semibold text-xs uppercase text-orange-500">Menu</h1>{" "}
+      <h1 className="font-dm font-semibold text-xs uppercase text-orange-500">
+        Menu
+      </h1>
       <p className="font-cal text-4xl uppercase max-lg:text-xl font-semibold text-center max-lg:px-5">
         Where Tokyo Meets Mexico City Every Bite a New Adventure
-      </p>{" "}
+      </p>
       <p className="text-neutral-500 text-sm text-center w-9/12 max-lg:w-11/12 font-dm max-lg:px-5 max-lg:text-center max-lg:text-[11px]">
         Discover the fiery passion of Mexico and the refined artistry of Japan
         in every dish. Our menu celebrates bold fusion flavors, traditional
@@ -41,18 +56,20 @@ const MenuMarquee = () => {
       <div className="w-full overflow-hidden mt-10">
         <div className="marquee">
           {duplicatedImages.map((item, index) => (
-            <img
-              key={index}
-              src={item}
-              className="w-[300px] h-[400px] max-lg:h-[300px] max-lg:w-[200px] object-cover mx-2"
-              alt={`menu-${index}`}
-            />
+            <div className="marquee-item" key={`${item.name}-${index}`}>
+              <img
+                src={item.image}
+                className="w-[300px] h-[400px] max-lg:h-[300px] max-lg:w-[200px] object-cover mx-2"
+                alt={`menu-${item.name}-${index}`}
+              />
+              <p className="font-semibold text-neutral-700">{item.name}</p>
+            </div>
           ))}
         </div>
       </div>
       <a
         href="/menu/food"
-        className="font-dm max-lg:text-xs max-lg:px-7 font-semibold text-white bg-black px-10 py-3  mt-10"
+        className="font-dm max-lg:text-xs max-lg:px-7 font-semibold text-white bg-black px-10 py-3 mt-10"
       >
         Explore Menu
       </a>
