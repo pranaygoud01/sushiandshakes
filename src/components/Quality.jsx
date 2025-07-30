@@ -25,7 +25,7 @@ const cards = [
 
 const Quality = () => {
   return (
-    <div className="max-w-8xl mx-auto max-lg:px-5 relative px-10 py-12">
+    <div className="max-w-8xl mx-auto max-lg:px-5 border-b border-b-neutral-300 relative px-10 py-12">
       <span className="absolute top-0 max-lg:hidden left-10">
         <img src={food} className="w-auto h-[150px]"/>
       </span>
