@@ -63,7 +63,7 @@ const AmbienceMarquee = () => {
       <div className="relative flex justify-center mt-10">
         <button
           onClick={toggleOptions}
-          className="font-semibold flex max-lg:px-2 items-center gap-1 cursor-pointer text-white bg-black px-6 py-2 text-sm"
+          className="font-semibold flex max-lg:px-2 items-center gap-1 cursor-pointer text-white bg-black px-6 py-2 text-xl max-lg:text-lg"
         >
           Book A Table
         </button>

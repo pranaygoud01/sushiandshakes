@@ -32,7 +32,7 @@ const Hero = () => {
           <div className="flex  sm:flex-row items-start sm:items-center gap-3 mt-5">
             <a
               href="https://order.nuwairahs.co.uk/"
-              className="font-semibold text-white px-8 py-2 hover:bg-orange-600 text-lg max-lg:text-sm bg-orange-500"
+              className="font-semibold text-white px-8 py-2 hover:bg-orange-600 text-xl max-lg:text-lg  bg-orange-500"
             >
               Order Now
             </a>
