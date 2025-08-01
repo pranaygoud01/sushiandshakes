@@ -38,25 +38,24 @@ const NavBar = () => {
     },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
-  
   ];
 
   return (
     <>
       {/* Top info bar */}
-      <div className="w-full flex justify-between max-lg:px-2 max-lg:justify-center text-white bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 px-20 p-3 h-[40px] font-semibold">
+      <div className="w-full flex justify-between max-lg:px-2 max-lg:justify-center text-white bg-careys-pink-700 px-20 p-3 h-[40px] font-semibold">
         <h1 className="flex gap-1 max-lg:text-[9px] items-center text-xs">
           <GrLocation />
-          Nuwairahs Japanese and Mexican kitchen, Station road, Old Harlow, CM17 0AS
+          Sushi & Shakes Old Harlow & Bishop's Stortford
         </h1>
         <div className="flex text-xs max-lg:hidden gap-5">
           <p className="flex gap-1 items-center">
             <MdOutlineLocalPhone />
-            +44 1279 801230
+            +44 01279801230
           </p>
           <p className="flex gap-1 items-center">
             <IoMailOutline />
-            info@nuwairahs.co.uk
+            info@sushiandshakes.com
           </p>
         </div>
       </div>
@@ -107,7 +106,7 @@ const NavBar = () => {
           {/* Desktop CTA */}
           <a
             href="https://order.nuwairahs.co.uk/"
-            className="hidden md:flex items-center gap-2 font-bold text-white px-4 py-2 bg-orange-500 text-sm hover:bg-orange-600 transition-all duration-200"
+            className="hidden md:flex items-center gap-2 font-bold text-white px-4 py-2 bg-careys-pink-700 text-sm transition-all duration-200"
           >
             Order Now
           </a>
@@ -211,21 +210,19 @@ const NavBar = () => {
               </div>
 
               {/* Sticky contact info at bottom */}
-              <div className="bg-orange-600/10 border-t border-orange-200 p-5">
-                <h3 className="text-xs font-bold text-orange-600 mb-2">Contact Us</h3>
+              <div className="bg-careys-pink-700 text-white border-t border-careys-pink-800 p-5">
+                <h3 className="text-xs font-bold mb-2">Contact Us</h3>
                 <p className="text-xs flex gap-2 items-center mb-1.5">
                   <GrLocation size={10} />
-                  Nuwairahs Japanese and Mexican kitchen
-                  <br />
-                  Station road, Old Harlow, CM17 0AS
+                  Sushi & Shakes Old Harlow & Bishop's Stortford
                 </p>
                 <p className="text-xs flex gap-2 items-center mb-1.5">
                   <MdOutlineLocalPhone />
-                  +44 1279 801230
+                  +44 01279801230
                 </p>
                 <p className="text-xs flex gap-2 items-center">
                   <IoMailOutline />
-                  info@nuwairahs.co.uk
+                  info@sushiandshakes.com
                 </p>
               </div>
             </motion.div>

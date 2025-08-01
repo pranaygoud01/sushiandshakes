@@ -41,7 +41,7 @@ const MenuMarquee = () => {
           gap: 0.5rem;
         }
       `}</style>
-      <h1 className="font-dm font-semibold text-xs uppercase text-orange-500">
+      <h1 className="font-dm font-semibold text-xs uppercase text-careys-pink-500 ">
         Menu
       </h1>
       <p className="font-cal text-4xl uppercase max-lg:text-xl font-semibold text-center max-lg:px-5">
@@ -69,7 +69,7 @@ const MenuMarquee = () => {
       </div>
       <a
         href="/menu/food"
-        className="font-dm max-lg:text-xs max-lg:px-7 font-semibold text-white bg-black px-10 py-3 mt-10"
+        className="font-dm max-lg:text-xs max-lg:px-7 font-semibold text-white bg-careys-pink-700  px-10 py-3 mt-10"
       >
         Explore Menu
       </a>

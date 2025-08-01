@@ -16,7 +16,7 @@ const App = () => {
       <Quality />
 
       <About />
-      <AmbiancePage />
+     
       <InfoSection />
     </div>
   );

@@ -3,8 +3,6 @@ import { SiGooglegemini } from "react-icons/si";
 import logo from "../assets/logo.png";
 
 const Hero = () => {
-
-
   return (
     <div className="flex justify-center border-b border-b-neutral-300 relative">
       {/* Watermark Logo */}
@@ -18,34 +16,36 @@ const Hero = () => {
         {/* Left Content */}
         <div className="flex flex-col gap-4 justify-center relative pt-10 max-lg:pt-5 md:py-0">
           <span className="absolute top-15 max-lg:top-6 max-lg:right-3 right-15">
-            <SiGooglegemini className="text-orange-500 text-xl" />
+            <SiGooglegemini className="text-careys-pink-900  text-xl" />
           </span>
-          <h1 className="font-semibold text-3xl md:text-5xl uppercase leading-tight text-black">
-            Where traditional recipes dance with modern flavors
+          <p className="text-xs text-careys-pink-500  font-semibold">SUSHI AND SHAKES</p>
+          <h1 className="font-semibold text-2xl md:text-4xl uppercase leading-tight text-black">
+            Taste the Artistry of Sushi & the Indulgence of Shakes
           </h1>
-          <p className="text-neutral-500 text-sm md:text-base">
-            Discover the perfect blend of Japanese elegance and Mexican zest.
-            Explore bold, fresh flavors crafted to delight your taste buds.
-            Enjoy a unique fusion experience that brings two vibrant cuisines
-            together.
+          <p className="text-neutral-500 text-xs md:text-base">
+            Savor the freshest sushi rolls, handcrafted with precision,
+            alongside decadent shakes bursting with flavor. Dive into a creative
+            menu where every bite promises tradition, excitement, and a sweet
+            finish. Welcome to your new favorite spot for sushi cravings and
+            shake delights!
           </p>
+
           <div className="flex  sm:flex-row items-start sm:items-center gap-3 mt-5">
             <a
-              href="https://order.nuwairahs.co.uk/"
-              className="font-semibold text-white px-8 py-2 hover:bg-orange-600 text-xl max-lg:text-lg  bg-orange-500"
+              href="https://order.sushiandshakes.com/"
+              className="font-semibold text-white px-8 py-2  text-xl max-lg:text-lg  bg-careys-pink-700 "
             >
               Order Now
             </a>
-     
           </div>
         </div>
 
         {/* Right Image */}
         <div
-          className="w-full max-lg:hidden h-64 md:h-auto bg-cover bg-center bg-no-repeat"
+          className="w-full  h-64 md:h-auto bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1680044991909-d4cf212589b0?q=80&w=1143&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+              "url('https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
           }}
         ></div>
       </div>

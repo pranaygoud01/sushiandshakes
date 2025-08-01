@@ -33,7 +33,7 @@ const Quality = () => {
       <h2 className="text-3xl uppercase max-lg:text-xl font-bold text-center ">
         Our Commitment to Quality
       </h2>
-      <p className="text-center mb-10 text-xs py-2 max-lg:mb-5 font-semibold text-orange-500 uppercase">Nuwairah's</p>
+      <p className="text-center mb-10 text-xs py-2 max-lg:mb-5 font-semibold text-careys-pink-500 uppercase">SUSHI AND SHAKES</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {cards.map((card, idx) => (

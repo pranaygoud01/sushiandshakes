@@ -4,3 +4,44 @@
 *{
    font-family: "Onest", sans-serif;
 }
+
+:root {
+  --color-careys-pink-50:  #fbf5f6;
+  --color-careys-pink-100: #f7ecef;
+  --color-careys-pink-200: #f0dbe1;
+  --color-careys-pink-300: #e4bdc8;
+  --color-careys-pink-400: #d59bad;
+  --color-careys-pink-500: #c1728d;
+  --color-careys-pink-600: #a95575;
+  --color-careys-pink-700: #8d4361;
+  --color-careys-pink-800: #773a55;
+  --color-careys-pink-900: #67344c;
+  --color-careys-pink-950: #381927;
+}
+
+
+/* Background color utilities */
+.bg-careys-pink-50  { background-color: var(--color-careys-pink-50); }
+.bg-careys-pink-100 { background-color: var(--color-careys-pink-100); }
+.bg-careys-pink-200 { background-color: var(--color-careys-pink-200); }
+.bg-careys-pink-300 { background-color: var(--color-careys-pink-300); }
+.bg-careys-pink-400 { background-color: var(--color-careys-pink-400); }
+.bg-careys-pink-500 { background-color: var(--color-careys-pink-500); }
+.bg-careys-pink-600 { background-color: var(--color-careys-pink-600); }
+.bg-careys-pink-700 { background-color: var(--color-careys-pink-700); }
+.bg-careys-pink-800 { background-color: var(--color-careys-pink-800); }
+.bg-careys-pink-900 { background-color: var(--color-careys-pink-900); }
+.bg-careys-pink-950 { background-color: var(--color-careys-pink-950); }
+
+/* Text color utilities */
+.text-careys-pink-50  { color: var(--color-careys-pink-50); }
+.text-careys-pink-100 { color: var(--color-careys-pink-100); }
+.text-careys-pink-200 { color: var(--color-careys-pink-200); }
+.text-careys-pink-300 { color: var(--color-careys-pink-300); }
+.text-careys-pink-400 { color: var(--color-careys-pink-400); }
+.text-careys-pink-500 { color: var(--color-careys-pink-500); }
+.text-careys-pink-600 { color: var(--color-careys-pink-600); }
+.text-careys-pink-700 { color: var(--color-careys-pink-700); }
+.text-careys-pink-800 { color: var(--color-careys-pink-800); }
+.text-careys-pink-900 { color: var(--color-careys-pink-900); }
+.text-careys-pink-950 { color: var(--color-careys-pink-950); }
