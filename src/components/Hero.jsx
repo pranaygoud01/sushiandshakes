@@ -1,53 +1,58 @@
-import React, { useState } from "react";
+import React from "react";
 import { SiGooglegemini } from "react-icons/si";
 import logo from "../assets/logo.png";
 
 const Hero = () => {
   return (
-    <div className="flex justify-center border-b border-b-neutral-300 relative">
+    <div className="relative bg-white overflow-hidden border-b border-neutral-200">
       {/* Watermark Logo */}
       <img
         src={logo}
         alt="Watermark Logo"
-        className="pointer-events-none select-none opacity-10 absolute inset-0 m-auto max-w-xs max-h-xs z-0"
+        className="pointer-events-none select-none opacity-5 absolute inset-0 m-auto max-w-sm z-0"
       />
 
-      <div className="max-w-8xl min-h-[60vh] lg:h-[70vh] max-lg:px-5 px-10 gap-10 w-full grid grid-cols-1 md:grid-cols-2 relative z-10">
+      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 items-center gap-10 max-w-7xl mx-auto px-6 md:px-12 py-16 lg:py-24">
         {/* Left Content */}
-        <div className="flex flex-col gap-4 justify-center relative pt-10 max-lg:pt-5 md:py-0">
-          <span className="absolute top-15 max-lg:top-6 max-lg:right-3 right-15">
-            <SiGooglegemini className="text-careys-pink-900  text-xl" />
-          </span>
-          <p className="text-xs text-careys-pink-500  font-semibold">SUSHI AND SHAKES</p>
-          <h1 className="font-semibold text-2xl md:text-4xl uppercase leading-tight text-black">
-            Taste the Artistry of Sushi & the Indulgence of Shakes
+        <div className="space-y-6">
+          <div className="flex items-center justify-between">
+            <p className="text-careys-pink-600 text-sm font-bold tracking-wide">
+              SUSHI AND SHAKES
+            </p>
+            <SiGooglegemini className="text-careys-pink-800 text-2xl" />
+          </div>
+          <h1 className="text-3xl md:text-5xl font-extrabold text-black leading-tight">
+            Taste the Artistry of Sushi <br /> & the Indulgence of Shakes
           </h1>
-          <p className="text-neutral-500 text-xs md:text-base">
+          <p className="text-neutral-600 text-sm md:text-base">
             Savor the freshest sushi rolls, handcrafted with precision,
             alongside decadent shakes bursting with flavor. Dive into a creative
             menu where every bite promises tradition, excitement, and a sweet
-            finish. Welcome to your new favorite spot for sushi cravings and
-            shake delights!
+            finish. Welcome to your new favorite spot!
           </p>
-
-          <div className="flex  sm:flex-row items-start sm:items-center gap-3 mt-5">
+          <div>
             <a
               href="https://order.sushiandshakes.com/"
-              className="font-semibold text-white px-8 py-2  text-xl max-lg:text-lg  bg-careys-pink-700 "
+              className="inline-block bg-careys-pink-700 hover:bg-careys-pink-800 text-white px-8 py-3 rounded-full text-lg font-semibold transition duration-300"
             >
               Order Now
             </a>
           </div>
         </div>
 
-        {/* Right Image */}
-        <div
-          className="w-full  h-64 md:h-auto bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-          }}
-        ></div>
+        {/* Right Image with overlay */}
+        <div className="relative w-full h-80 md:h-[400px] rounded-3xl overflow-hidden shadow-lg">
+          <div
+            className="absolute inset-0 bg-gradient-to-tr from-white via-transparent to-careys-pink-200 opacity-30 z-10"
+          ></div>
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage:
+                "url('https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+            }}
+          ></div>
+        </div>
       </div>
     </div>
   );
